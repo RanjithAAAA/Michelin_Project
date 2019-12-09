@@ -33,9 +33,9 @@
       <!--Navigation bar-->
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.php">Home</a></li>
+         <!--   <li class="active"><a href="index.php">Home</a></li>
           <li><a href="login1.php">Login</a></li>
-		 <!--  <li class="drop-down"><a href="">People</a>
+		 <li class="drop-down"><a href="">People</a>
                 <ul>
                   <li><a href="addpeople.php">Add Employee</a></li>
                   <li><a href="deletepeople.php">Delete Employee</a></li>
@@ -60,8 +60,8 @@
       <div class="intro-info">
         <h2>Track Michelin<br><span>Bus</span><br>Location</h2>
         <div>
-          <a href="#contact" class="btn-get-started scrollto">Schedule Upload</a>
-          <a href="#services" class="btn-services scrollto">Track Bus</a>
+          <a href="index.php" class="btn-get-started scrollto">HOME</a>
+          <a href="login1.php" class="btn-services scrollto">LOGIN</a>
         </div>
       </div>
 
