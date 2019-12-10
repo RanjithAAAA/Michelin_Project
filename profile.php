@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","root","","login");
+$conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
  $query = "SELECT * from newlogin where id='".$id."'";
 $result = mysqli_query($conn, $query) or die ( mysqli_error());
 $row = mysqli_fetch_assoc($result); 
