@@ -7,6 +7,7 @@
 <button onclick="getLocation()">Try It</button>
 
 <p id="demo"></p>
+           <div id="map"></div>
 
 <script>
 var x = document.getElementById("demo");
