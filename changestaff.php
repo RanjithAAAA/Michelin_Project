@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","root","","login");
+$conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
  $userid=$_REQUEST['userid'];
  $query = "SELECT * from users where userid='".$userid."'";
 $result = mysqli_query($conn, $query) or die ( mysqli_error());
