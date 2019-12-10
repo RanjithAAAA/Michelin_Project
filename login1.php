@@ -1,7 +1,7 @@
 <?php
    
    session_start();
-   $conn = new mysqli("localhost","root","","login");
+   $conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
    $error="";
    if(isset($_POST['login'])) {
       // username and password sent from form 
