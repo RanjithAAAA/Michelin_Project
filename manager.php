@@ -4,6 +4,8 @@
 	   header("location:login1.php");
    }
 ?>
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +27,19 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+  <!--Registration Form CSS -->
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+  <style>
+input[type=text], input[type=time] ,input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+   border: 2px solid blue;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+</style>
 </head>
 
 <body>
@@ -56,93 +70,46 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="clearfix">
-    <div class="container">
-
-      <div class="intro-img">
-        <img src="img/location.jpg" alt="" class="img-fluid">
-      </div>
-
-      <div class="intro-info">
-        <h2>Track Michelin<br><span>Bus</span><br>Location</h2>
-        <div>
-          <a href="#contact" class="btn-get-started scrollto">Schedule Upload</a>
-          <a href="#services" class="btn-services scrollto">Track Bus</a>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- #intro -->
 
   <main id="main">
 
     <!--==========================
       Contact Section
     ============================-->
+	<br>
+	<br>
+	<br>
     <section id="contact">
       <div class="container-fluid">
 
         <div class="section-header">
-          <h3>Schedule Upload</h3>
+		<h3>Welcome <?= $_SESSION['username'] ?>!!!</h3>
+          <h3>Upload Scheulde</h3>
         </div>
 
         <div class="row wow fadeInUp">
 
-          <div class="col-lg-6">
-            <div class="map mb-4 mb-lg-0">
-              <img src="img/extra.jpg" frameborder="0" style="border:0; width: 100%; height: 312px;"></img>
-            </div>
-          </div>
+         
 
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-5 info">
-                <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street, NY 535022</p>
-              </div>
-              <div class="col-md-4 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
-              </div>
-              <div class="col-md-3 info">
-                <i class="ion-ios-telephone-outline"></i>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-
+          <div class="col-lg-12">
+            
             <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-				<div class="form-group">
-				
-                   <form action="upload" method="post" enctype="multipart/form-data">
-                        <label for="file_photo">Photo:</label>
-                        <input type="file" name="file_photo" id="file_photo"><br>
-                        <div class="text-center"><button type="submit" title="Send Message">Upload</button></div>
-                   </form>
-                    <div class="validation"></div>
-				</div>
              
-              </form>
+             <form action="manageredit.php" method="post" enctype="application/x-www-form-urlencoded">
+             <div class="container">
+   
+             <hr>
+    
+             <label for="managerid"><b>Manager Chorus ID</b></label>
+             <input type="number" placeholder="Enter your ChorusID" name="managerid" required>
+	
+            <div class="text-center">
+	        <button href="manageredit.php?managerid=<?php echo $row["managerid"]; ?>" type="submit" name="submit">Submit</button>
+            </div>
+            </div>
+                  
+				</form>
+				
             </div>
           </div>
 
@@ -223,3 +190,4 @@
 
 </body>
 </html>
+
