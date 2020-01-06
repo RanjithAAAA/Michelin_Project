@@ -334,7 +334,7 @@ $result=mysql_query($query);
                     <td><?php echo $row['routeid'];?></td>
                     <td><?php echo $row['pickuppoint'];?></td>
                     <td><?php echo $row['destinationpoint'];?></td>
-		    <td><?php echo $row['Location'];?></td>
+		    <td><?php echo '<a href="'.$row['Location'].'">'.$row['Location'].'</a>'; ?></td>
                     <td><?php echo $row['driverid'];?></td>
 		    <td><?php echo $row['busid'];?></td>
 		    <td><?php echo $row['busno'];?></td>
