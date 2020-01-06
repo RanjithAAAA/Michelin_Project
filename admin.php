@@ -309,6 +309,7 @@ $result=mysql_query($query);
                     <th>RouteID</th>
                     <th>Starting Point</th>
                     <th>Destination Point</th>
+	            <th>Location</th>
                     <th>Driver Id</th>
                     <th>Bus ID</th>
                     <th>Bus NO</th>
@@ -320,6 +321,7 @@ $result=mysql_query($query);
                     <th>RouteID</th>
                     <th>Starting Point</th>
                     <th>Destination Point</th>
+	            <th>Location</th>
                     <th>Driver Id</th>
                     <th>Bus ID</th>
                     <th>Bus NO</th>
@@ -332,7 +334,7 @@ $result=mysql_query($query);
                     <td><?php echo $row['routeid'];?></td>
                     <td><?php echo $row['pickuppoint'];?></td>
                     <td><?php echo $row['destinationpoint'];?></td>
-		    <td><?php echo $row['destinationpoint'];?></td>
+		    <td><?php echo $row['Location'];?></td>
                     <td><?php echo $row['driverid'];?></td>
 		    <td><?php echo $row['busid'];?></td>
 		    <td><?php echo $row['busno'];?></td>
