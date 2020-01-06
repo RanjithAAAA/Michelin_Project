@@ -4,7 +4,7 @@
 	   header("location:login1.php");
    }
 include_once('connection.php');
-$query = "SELECT routeid,pickuppoint,destinationpoint,driverid,busid,busno FROM commontable";
+$query = "SELECT * FROM commontable";
 $result=mysql_query($query);
 ?>
 
@@ -332,9 +332,10 @@ $result=mysql_query($query);
                     <td><?php echo $row['routeid'];?></td>
                     <td><?php echo $row['pickuppoint'];?></td>
                     <td><?php echo $row['destinationpoint'];?></td>
+		    <td><?php echo $row['destinationpoint'];?></td>
                     <td><?php echo $row['driverid'];?></td>
-					<td><?php echo $row['busid'];?></td>
-					<td><?php echo $row['busno'];?></td>
+		    <td><?php echo $row['busid'];?></td>
+		    <td><?php echo $row['busno'];?></td>
                 </tr>
                   <?php } ?>
                 </tbody>
