@@ -5,7 +5,7 @@
    }
 ?>
 <?php
- $conn = new mysqli("localhost","root","","login");
+ $conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
 	$ChorusID=$_REQUEST['ChorusID'];
 	$sql="SELECT * FROM schedule where ChorusID='".$ChorusID."'";
     $result = mysqli_query($conn,$sql) or die ( mysqli_error());
