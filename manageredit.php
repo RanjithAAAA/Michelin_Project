@@ -6,7 +6,7 @@
 ?>
 
 <?php
- $conn = new mysqli("localhost","root","","login");
+$conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
  
 if(isset($_POST['submit'])) { 
   
