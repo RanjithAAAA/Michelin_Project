@@ -138,7 +138,7 @@ $result=mysql_query($query);
           <span>User Location</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="buslocation.php">
           <i class="fas fa-map-marker"></i>
           <span>Bus Location</span></a>
       </li>
@@ -309,7 +309,7 @@ $result=mysql_query($query);
                     <th>RouteID</th>
                     <th>Starting Point</th>
                     <th>Destination Point</th>
-	            <th>Location</th>
+					<th>Location</th>
                     <th>Driver Id</th>
                     <th>Bus ID</th>
                     <th>Bus NO</th>
@@ -321,7 +321,7 @@ $result=mysql_query($query);
                     <th>RouteID</th>
                     <th>Starting Point</th>
                     <th>Destination Point</th>
-	            <th>Location</th>
+					<th>Location</th>
                     <th>Driver Id</th>
                     <th>Bus ID</th>
                     <th>Bus NO</th>
@@ -334,10 +334,10 @@ $result=mysql_query($query);
                     <td><?php echo $row['routeid'];?></td>
                     <td><?php echo $row['pickuppoint'];?></td>
                     <td><?php echo $row['destinationpoint'];?></td>
-		    <td><?php echo '<a href="'.$row['Location'].'">'.$row['Location'].'</a>'; ?></td>
+					<td><?php echo '<a href="'.$row['Location'].'">'.$row['Location'].'</a>'; ?></td>
                     <td><?php echo $row['driverid'];?></td>
-		    <td><?php echo $row['busid'];?></td>
-		    <td><?php echo $row['busno'];?></td>
+					<td><?php echo $row['busid'];?></td>
+					<td><?php echo $row['busno'];?></td>
                 </tr>
                   <?php } ?>
                 </tbody>
@@ -412,3 +412,4 @@ $result=mysql_query($query);
 </body>
 
 </html>
+
