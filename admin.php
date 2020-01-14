@@ -108,7 +108,7 @@ $result=mysql_query($query);
       </li>
 	  <li class="nav-item">
         <a class="nav-link" href="staff.php">
-          <i class="fas fa-users"></i>
+          <i class="fas fa-address-book"></i>
           <span>Employees</span></a>
       </li>
        <li class="nav-item">
