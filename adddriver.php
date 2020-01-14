@@ -33,7 +33,7 @@ if(isset($_POST['submit'])) {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Tables</title>
+  <title>Welcome <?= $_SESSION['username'] ?></title>
     <link href="img/icon.jpg" rel="icon">
 
   <!--Registration Form CSS -->
