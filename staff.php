@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('connection.php');
 
 $query = "SELECT * FROM users";
@@ -16,7 +17,9 @@ $result=mysql_query($query);
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin - Tables</title>
+ <title>Welcome <?= $_SESSION['username'] ?></title>
+    <link href="img/icon.jpg" rel="icon">
+
     <link href="img/icon.jpg" rel="icon">
 
   <!-- Custom fonts for this template-->
