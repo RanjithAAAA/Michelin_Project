@@ -48,13 +48,23 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 <body>
-
+<style>
+input[type=password] ,input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+   border: 2px solid blue;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+</style>
 <div class="container" >
       <div class="login">
          <div class="container">
               <h1 >Log in</h1>
 			  <form action = "<?= $_SERVER['PHP_SELF']?>" method = "post">
-              <input type="text" placeholder="Username" name="username" style="width: 100%;padding: 10px;margin-bottom: 30px;border: none; background-color: #eeeeef;">
+              <input type="text" style="border: 2px solid blue;" placeholder="Username" name="username" style="width: 100%;padding: 10px;margin-bottom: 30px;border: none; background-color: #eeeeef;">
               <input type="password" placeholder="Password" name="password"><br>
 			  <div style="float: left; margin-right: 5px;">
 			  <label for="usertype">I'm a:</label>
