@@ -2,7 +2,8 @@
 
 
 // Create connection
-$conn = new mysqli("localhost","root","","login");
+ $conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
+
 
 if (mysqli_connect_errno()) {
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
