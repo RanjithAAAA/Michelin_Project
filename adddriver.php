@@ -1,4 +1,6 @@
 <?php
+ session_start();
+
  $conn = new mysqli("mtransport-mysqldbserver.mysql.database.azure.com","balaji@mtransport-mysqldbserver","Michelin@1234","michelindb");
  
 if(isset($_POST['submit'])) { 
@@ -52,7 +54,7 @@ if(isset($_POST['submit'])) {
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="admin.php">Welcome Admin</a>
+    <a class="navbar-brand mr-1" href="admin.php">Welcome <?= $_SESSION['username'] ?></a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
