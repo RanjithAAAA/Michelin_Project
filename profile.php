@@ -27,7 +27,17 @@ $row = mysqli_fetch_assoc($result);
   <link href="css/sb-admin.css" rel="stylesheet">
 
 </head>
-
+<style>
+input[type=text], input[type=password]  {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+   border: 2px solid blue;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+</style>
 <body id="page-top">
 
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
