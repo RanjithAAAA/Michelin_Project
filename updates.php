@@ -9,13 +9,22 @@ if (mysqli_connect_errno()) {
 		die();
 	}
 	
-$status = $_GET['status']
-$username = $_GET['username']
-$stmt = $conn->prepare("update users set status='$status' where username='$username';");
+$status = $_POST['status']
+$username = $_POST['username']
+$stmt = "update users set status='$status' where username='$username'";
+
+if(mysqli_query($conn,$stmt)){
+ 
+ echo 'Data Inserted Successfully';
+ 
+ }
+ else{
+ 
+ echo 'Try Again';
+ 
+ }
 
 
-
-$stmt->execute();
 	
 	//binding results to the query 
 	//$stmt->bind_result($routeid);
