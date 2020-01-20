@@ -10,8 +10,8 @@ if (mysqli_connect_errno()) {
 		die();
 	}
 	
-$status = $_POST['status']
-$username = $_POST['username']
+$status = $_POST['status'];
+$username = $_POST['username'];
 $Stmt = "update users set status='$status' where username='$username'";
 
 if(mysqli_query($conn,$Stmt)){
